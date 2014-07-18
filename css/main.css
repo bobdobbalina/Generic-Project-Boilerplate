@@ -1,0 +1,1403 @@
+@charset "UTF-8";
+/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+/* line 2, config/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 2, config/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 2, config/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 2, config/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 2, config/_normalize.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 2, config/_normalize.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+/* line 2, config/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 2, config/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 2, config/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 2, config/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 2, config/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0;
+}
+
+/* line 2, config/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 2, config/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 2, config/_normalize.scss */
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+
+/* line 2, config/_normalize.scss */
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0;
+}
+
+/* line 2, config/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 2, config/_normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 2, config/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 2, config/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 2, config/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 2, config/_normalize.scss */
+p, pre {
+  margin: 1em 0;
+}
+
+/* line 2, config/_normalize.scss */
+pre, code, kbd, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em;
+}
+
+/* line 2, config/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 2, config/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/* line 2, config/_normalize.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 2, config/_normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 2, config/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 2, config/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 2, config/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 2, config/_normalize.scss */
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+/* line 2, config/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 2, config/_normalize.scss */
+menu, ol, ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 2, config/_normalize.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 2, config/_normalize.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 2, config/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 2, config/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 2, config/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/* line 2, config/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 2, config/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 2, config/_normalize.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 2, config/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 2, config/_normalize.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 2, config/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 2, config/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 2, config/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, config/_normalize.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 2, config/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 2, config/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 2, config/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! normalize-opentype v0.1.1 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+ * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+ *    Turn off all other ligatures, tabular, lining numerals, and alternates
+ */
+/* line 6, config/_normalize-opentype.scss */
+html, body {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 1. */
+}
+
+/* Headings
+========================================================================== */
+/**
+ * 1. Turn on discretionary ligatures for larger headings
+ */
+/* line 17, config/_normalize-opentype.scss */
+h1, h2, h3 {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */
+}
+
+/* Text-level semantics
+========================================================================== */
+/**
+ * 1. Change all letters to uppercase
+ * 2. Turn on small caps for upper and lowercase letters
+ */
+/* line 29, config/_normalize-opentype.scss */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */
+}
+
+/*
+ * TODO: Turn on diagonal fractions where appropriate
+ */
+/* line 40, config/_normalize-opentype.scss */
+time {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+}
+
+/*
+ * 1. Turn off kerning and ligatures,
+ *    Turn on lining, tabular numerals, slashed zero
+ */
+/* line 49, config/_normalize-opentype.scss */
+pre, kbd, samp, code {
+  -webkit-font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+
+/**
+ * 1. Turn on proper supercript numerals
+ */
+/* line 58, config/_normalize-opentype.scss */
+sup {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */
+}
+
+/**
+ * 1. Turn on proper subscript numerals
+ */
+/* line 67, config/_normalize-opentype.scss */
+sub {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */
+}
+
+/* Grouping content
+========================================================================== */
+/**
+ * TODO: Adds proper bullets
+ */
+/*
+ * TODO:
+ * 1. Adds counters for lists
+ * 2. Use proper numerals for lists
+ */
+/**
+ * Adds proper small caps
+ */
+/**
+ * TODO: scmp, sc2c, pnum, case sensitive forms for postal codes
+ */
+/* Forms
+========================================================================== */
+/**
+ * 1. Turns on lining numerals
+ */
+/* line 94, config/_normalize-opentype.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="numer"], input[type="range"], input[type="tel"], input[type="week"] {
+  -webkit-font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 0, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 0, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 0, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+
+/**
+ * TODO: Input modes
+ * https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+ */
+/* Localisation
+========================================================================== */
+/* Tables
+========================================================================== */
+/**
+ * 1. Turns on tabular, lining numerals and slashed zero
+ *    Turns off kerning, as it could impact tabular numerals
+ */
+/* line 112, config/_normalize-opentype.scss */
+table {
+  -webkit-font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  -moz-font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+
+/**
+ * 1. Revert to defaults for table headings
+ */
+/* line 121, config/_normalize-opentype.scss */
+table thead, table tfoot {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */
+}
+
+/* line 2, config/_utils.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 1, components/Bitters/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 0em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+}
+/* line 13, components/Bitters/extends/_button.scss */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #6f99d5;
+  color: white;
+}
+
+/* line 1, components/Bitters/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #dddddd;
+  color: #333333;
+  font-family: "Sabon Roman";
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 10, components/Bitters/_typography.scss */
+h2, h3, h4, h5, h6 {
+  font-family: "Sabon Roman";
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+}
+
+/* line 18, components/Bitters/_typography.scss */
+h1 {
+  font-size: 2.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+}
+
+/* line 27, components/Bitters/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 31, components/Bitters/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 35, components/Bitters/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 39, components/Bitters/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 43, components/Bitters/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 47, components/Bitters/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 51, components/Bitters/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: underline;
+}
+/* line 56, components/Bitters/_typography.scss */
+a:hover {
+  color: #2c5999;
+}
+/* line 60, components/Bitters/_typography.scss */
+a:active, a:focus {
+  color: #2c5999;
+  outline: none;
+}
+
+/* line 66, components/Bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 74, components/Bitters/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 79, components/Bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid rgba(51, 51, 51, 0.2);
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 86, components/Bitters/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic;
+}
+/* line 90, components/Bitters/_typography.scss */
+cite:before {
+  content: '\2014 \00A0';
+}
+
+/* line 96, components/Bitters/_typography.scss */
+address {
+  font-style: normal;
+}
+
+/* line 1, components/Bitters/_forms.scss */
+fieldset {
+  background: rgba(77, 77, 77, 0.2);
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 8, components/Bitters/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Sabon Roman";
+  font-size: 1em;
+}
+
+/* line 16, components/Bitters/_forms.scss */
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0.375em;
+}
+/* line 22, components/Bitters/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 26, components/Bitters/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, components/Bitters/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  transition: border-color;
+  color: #333333;
+  background-color: white;
+  border-radius: 0em;
+  border: 1px solid transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: "Sabon Roman";
+  font-size: 1em;
+  padding: 15px 20px 13px;
+  width: 100%;
+}
+/* line 48, components/Bitters/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: rgba(26, 26, 26, 0.2);
+}
+/* line 52, components/Bitters/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: white;
+  -webkit-box-shadow: none, 0 0 5px rgba(242, 242, 242, 0.7);
+  box-shadow: none, 0 0 5px rgba(242, 242, 242, 0.7);
+  outline: none;
+}
+
+/* line 59, components/Bitters/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 63, components/Bitters/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 67, components/Bitters/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 72, components/Bitters/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+/* line 84, components/Bitters/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 91, components/Bitters/_forms.scss */
+legend {
+  display: none;
+}
+
+/* line 95, components/Bitters/_forms.scss */
+.form-group {
+  margin-bottom: 20px;
+}
+/* line 15, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+.form-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 1, components/Bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, components/Bitters/_tables.scss */
+th {
+  border-bottom: 1px solid rgba(13, 13, 13, 0.2);
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, components/Bitters/_tables.scss */
+td {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 0.75em 0;
+}
+
+/* line 20, components/Bitters/_tables.scss */
+tr, td, th {
+  vertical-align: middle;
+}
+
+/* line 1, components/Bitters/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 19, components/Bitters/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 22, components/Bitters/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 27, components/Bitters/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, components/Bitters/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 18px 20px 18px 24px;
+}
+/* line 15, components/Bitters/_buttons.scss */
+button i,
+input[type="submit"] i {
+  font-size: 12px;
+}
+
+/* line 2, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(7.04225%, red), color-stop(7.04225%, transparent), color-stop(8.4507%, transparent), color-stop(8.4507%, red), color-stop(15.49296%, red), color-stop(15.49296%, transparent), color-stop(16.90141%, transparent), color-stop(16.90141%, red), color-stop(23.94366%, red), color-stop(23.94366%, transparent), color-stop(25.35211%, transparent), color-stop(25.35211%, red), color-stop(32.39437%, red), color-stop(32.39437%, transparent), color-stop(33.80282%, transparent), color-stop(33.80282%, red), color-stop(40.84507%, red), color-stop(40.84507%, transparent), color-stop(42.25352%, transparent), color-stop(42.25352%, red), color-stop(49.29577%, red), color-stop(49.29577%, transparent), color-stop(50.70423%, transparent), color-stop(50.70423%, red), color-stop(57.74648%, red), color-stop(57.74648%, transparent), color-stop(59.15493%, transparent), color-stop(59.15493%, red), color-stop(66.19718%, red), color-stop(66.19718%, transparent), color-stop(67.60563%, transparent), color-stop(67.60563%, red), color-stop(74.64789%, red), color-stop(74.64789%, transparent), color-stop(76.05634%, transparent), color-stop(76.05634%, red), color-stop(83.09859%, red), color-stop(83.09859%, transparent), color-stop(84.50704%, transparent), color-stop(84.50704%, red), color-stop(91.5493%, red), color-stop(91.5493%, transparent), color-stop(92.95775%, transparent), color-stop(92.95775%, red), color-stop(100.0%, red), color-stop(100.0%, transparent));
+  background-image: linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+@media screen and (max-width: 73.125em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(7.04225%, red), color-stop(7.04225%, transparent), color-stop(8.4507%, transparent), color-stop(8.4507%, red), color-stop(15.49296%, red), color-stop(15.49296%, transparent), color-stop(16.90141%, transparent), color-stop(16.90141%, red), color-stop(23.94366%, red), color-stop(23.94366%, transparent), color-stop(25.35211%, transparent), color-stop(25.35211%, red), color-stop(32.39437%, red), color-stop(32.39437%, transparent), color-stop(33.80282%, transparent), color-stop(33.80282%, red), color-stop(40.84507%, red), color-stop(40.84507%, transparent), color-stop(42.25352%, transparent), color-stop(42.25352%, red), color-stop(49.29577%, red), color-stop(49.29577%, transparent), color-stop(50.70423%, transparent), color-stop(50.70423%, red), color-stop(57.74648%, red), color-stop(57.74648%, transparent), color-stop(59.15493%, transparent), color-stop(59.15493%, red), color-stop(66.19718%, red), color-stop(66.19718%, transparent), color-stop(67.60563%, transparent), color-stop(67.60563%, red), color-stop(74.64789%, red), color-stop(74.64789%, transparent), color-stop(76.05634%, transparent), color-stop(76.05634%, red), color-stop(83.09859%, red), color-stop(83.09859%, transparent), color-stop(84.50704%, transparent), color-stop(84.50704%, red), color-stop(91.5493%, red), color-stop(91.5493%, transparent), color-stop(92.95775%, transparent), color-stop(92.95775%, red), color-stop(100.0%, red), color-stop(100.0%, transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+  }
+}
+@media screen and (max-width: 61.25em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(10.6383%, red), color-stop(10.6383%, transparent), color-stop(12.76596%, transparent), color-stop(12.76596%, red), color-stop(23.40426%, red), color-stop(23.40426%, transparent), color-stop(25.53191%, transparent), color-stop(25.53191%, red), color-stop(36.17021%, red), color-stop(36.17021%, transparent), color-stop(38.29787%, transparent), color-stop(38.29787%, red), color-stop(48.93617%, red), color-stop(48.93617%, transparent), color-stop(51.06383%, transparent), color-stop(51.06383%, red), color-stop(61.70213%, red), color-stop(61.70213%, transparent), color-stop(63.82979%, transparent), color-stop(63.82979%, red), color-stop(74.46809%, red), color-stop(74.46809%, transparent), color-stop(76.59574%, transparent), color-stop(76.59574%, red), color-stop(87.23404%, red), color-stop(87.23404%, transparent), color-stop(89.3617%, transparent), color-stop(89.3617%, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+  }
+}
+@media screen and (max-width: 48em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(21.73913%, red), color-stop(21.73913%, transparent), color-stop(26.08696%, transparent), color-stop(26.08696%, red), color-stop(47.82609%, red), color-stop(47.82609%, transparent), color-stop(52.17391%, transparent), color-stop(52.17391%, red), color-stop(73.91304%, red), color-stop(73.91304%, transparent), color-stop(78.26087%, transparent), color-stop(78.26087%, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 73.125em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(7.04225%, red), color-stop(7.04225%, transparent), color-stop(8.4507%, transparent), color-stop(8.4507%, red), color-stop(15.49296%, red), color-stop(15.49296%, transparent), color-stop(16.90141%, transparent), color-stop(16.90141%, red), color-stop(23.94366%, red), color-stop(23.94366%, transparent), color-stop(25.35211%, transparent), color-stop(25.35211%, red), color-stop(32.39437%, red), color-stop(32.39437%, transparent), color-stop(33.80282%, transparent), color-stop(33.80282%, red), color-stop(40.84507%, red), color-stop(40.84507%, transparent), color-stop(42.25352%, transparent), color-stop(42.25352%, red), color-stop(49.29577%, red), color-stop(49.29577%, transparent), color-stop(50.70423%, transparent), color-stop(50.70423%, red), color-stop(57.74648%, red), color-stop(57.74648%, transparent), color-stop(59.15493%, transparent), color-stop(59.15493%, red), color-stop(66.19718%, red), color-stop(66.19718%, transparent), color-stop(67.60563%, transparent), color-stop(67.60563%, red), color-stop(74.64789%, red), color-stop(74.64789%, transparent), color-stop(76.05634%, transparent), color-stop(76.05634%, red), color-stop(83.09859%, red), color-stop(83.09859%, transparent), color-stop(84.50704%, transparent), color-stop(84.50704%, red), color-stop(91.5493%, red), color-stop(91.5493%, transparent), color-stop(92.95775%, transparent), color-stop(92.95775%, red), color-stop(100.0%, red), color-stop(100.0%, transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 7.04225%, transparent 7.04225%, transparent 8.4507%, red 8.4507%, red 15.49296%, transparent 15.49296%, transparent 16.90141%, red 16.90141%, red 23.94366%, transparent 23.94366%, transparent 25.35211%, red 25.35211%, red 32.39437%, transparent 32.39437%, transparent 33.80282%, red 33.80282%, red 40.84507%, transparent 40.84507%, transparent 42.25352%, red 42.25352%, red 49.29577%, transparent 49.29577%, transparent 50.70423%, red 50.70423%, red 57.74648%, transparent 57.74648%, transparent 59.15493%, red 59.15493%, red 66.19718%, transparent 66.19718%, transparent 67.60563%, red 67.60563%, red 74.64789%, transparent 74.64789%, transparent 76.05634%, red 76.05634%, red 83.09859%, transparent 83.09859%, transparent 84.50704%, red 84.50704%, red 91.5493%, transparent 91.5493%, transparent 92.95775%, red 92.95775%, red 100.0%, transparent 100.0%);
+  }
+}
+@media screen and (min-width: 61.25em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(10.6383%, red), color-stop(10.6383%, transparent), color-stop(12.76596%, transparent), color-stop(12.76596%, red), color-stop(23.40426%, red), color-stop(23.40426%, transparent), color-stop(25.53191%, transparent), color-stop(25.53191%, red), color-stop(36.17021%, red), color-stop(36.17021%, transparent), color-stop(38.29787%, transparent), color-stop(38.29787%, red), color-stop(48.93617%, red), color-stop(48.93617%, transparent), color-stop(51.06383%, transparent), color-stop(51.06383%, red), color-stop(61.70213%, red), color-stop(61.70213%, transparent), color-stop(63.82979%, transparent), color-stop(63.82979%, red), color-stop(74.46809%, red), color-stop(74.46809%, transparent), color-stop(76.59574%, transparent), color-stop(76.59574%, red), color-stop(87.23404%, red), color-stop(87.23404%, transparent), color-stop(89.3617%, transparent), color-stop(89.3617%, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 10.6383%, transparent 10.6383%, transparent 12.76596%, red 12.76596%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 36.17021%, transparent 36.17021%, transparent 38.29787%, red 38.29787%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 61.70213%, transparent 61.70213%, transparent 63.82979%, red 63.82979%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 87.23404%, transparent 87.23404%, transparent 89.3617%, red 89.3617%, red 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 48em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(21.73913%, red), color-stop(21.73913%, transparent), color-stop(26.08696%, transparent), color-stop(26.08696%, red), color-stop(47.82609%, red), color-stop(47.82609%, transparent), color-stop(52.17391%, transparent), color-stop(52.17391%, red), color-stop(73.91304%, red), color-stop(73.91304%, transparent), color-stop(78.26087%, transparent), color-stop(78.26087%, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 21.73913%, transparent 21.73913%, transparent 26.08696%, red 26.08696%, red 47.82609%, transparent 47.82609%, transparent 52.17391%, red 52.17391%, red 73.91304%, transparent 73.91304%, transparent 78.26087%, red 78.26087%, red 100%, transparent 100%);
+  }
+}
+@media screen and (min-width: 30em) {
+  /* line 11, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_visual-grid.scss */
+  body:before {
+    background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 100%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 100%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(0, red), color-stop(100%, red), to(transparent));
+    background-image: linear-gradient(left, transparent 0, red 0, red 100%, transparent 100%);
+  }
+}
+
+/* line 5, components/_icons.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.icon-facebook-squared:before,
+.icon-rss:before,
+.icon-twitter:before,
+.icon-linkedin:before,
+.icon-search:before,
+.icon-menu-1:before,
+.icon-arrow-right:before,
+.icon-arrow-up:before,
+.icon-arrow-left:before,
+.icon-arrow-down:before,
+.selectboxit-default-arrow:before,
+.icon-sort:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 48, components/_icons.scss */
+.icon-facebook-squared:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 49, components/_icons.scss */
+.icon-rss:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 50, components/_icons.scss */
+.icon-twitter:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 51, components/_icons.scss */
+.icon-linkedin:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 52, components/_icons.scss */
+.icon-search:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 53, components/_icons.scss */
+.icon-menu-1:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 54, components/_icons.scss */
+.icon-arrow-right:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 55, components/_icons.scss */
+.icon-arrow-up:before {
+  content: '\e807';
+}
+
+/* '' */
+/* line 56, components/_icons.scss */
+.icon-arrow-left:before {
+  content: '\e808';
+}
+
+/* '' */
+/* line 57, components/_icons.scss */
+.icon-arrow-down:before, .selectboxit-default-arrow:before {
+  content: '\e809';
+}
+
+/* '' */
+/* line 58, components/_icons.scss */
+.icon-sort:before {
+  content: '\e80a';
+}
+
+/* '' */
+/* line 3, components/_checkboxes.scss */
+.styledCheckbox,
+.styledRadio {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 10, components/_checkboxes.scss */
+.checkbox label {
+  font-size: 16px;
+  letter-spacing: normal;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: -webkit-calc(100% - 40px );
+  width: calc(100% - 40px );
+}
+/* line 19, components/_checkboxes.scss */
+.checkbox label:hover {
+  cursor: pointer;
+}
+
+/*
+ * jquery.selectBoxIt.css 3.8.0
+ * Author: @gregfranko
+ */
+/*
+  Common CSS Properties
+  ---------------------
+  These properties will be applied to any themes that you use
+*/
+/* SelectBoxIt container */
+/* line 13, components/_select-box-it.scss */
+.selectboxit-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* Styles that apply to all SelectBoxIt elements */
+/* line 21, components/_select-box-it.scss */
+.selectboxit-container * {
+  font-size: 16px;
+  color: #477dca;
+  /* Prevents text selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+/* Button */
+/* line 38, components/_select-box-it.scss */
+.selectboxit-container .selectboxit {
+  background-color: white;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+/* Height and Vertical Alignment of Text */
+/* line 52, components/_select-box-it.scss */
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+  height: 49px;
+  /* Height of the drop down */
+  line-height: 49px;
+  /* Vertically positions the drop down text */
+  display: block;
+}
+
+/* Focus pseudo selector */
+/* line 59, components/_select-box-it.scss */
+.selectboxit-container .selectboxit:focus {
+  outline: 0;
+}
+
+/* Disabled Mouse Interaction */
+/* line 64, components/_select-box-it.scss */
+.selectboxit.selectboxit-disabled, .selectboxit-options .selectboxit-disabled {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Button Text */
+/* line 74, components/_select-box-it.scss */
+.selectboxit-text {
+  color: #477dca;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-indent: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+/* line 85, components/_select-box-it.scss */
+.selectboxit .selectboxit-option-icon-container {
+  margin-left: 5px;
+}
+
+/* Options List */
+/* line 90, components/_select-box-it.scss */
+.selectboxit-container .selectboxit-options {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100%;
+  /* Minimum Width of the dropdown list box options */
+  *width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  display: none;
+  z-index: 9999999999999;
+  text-align: left;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Individual options */
+/* line 111, components/_select-box-it.scss */
+.selectboxit-option .selectboxit-option-anchor {
+  padding: 0 2px;
+}
+
+/* Individual Option Hover Action */
+/* line 116, components/_select-box-it.scss */
+.selectboxit-option .selectboxit-option-anchor:hover {
+  text-decoration: none;
+}
+
+/* Individual Option Optgroup Header */
+/* line 121, components/_select-box-it.scss */
+.selectboxit-option, .selectboxit-optgroup-header {
+  text-indent: 11px;
+  /* Horizontal Positioning of the select box option text */
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Drop Down optgroup headers */
+/* line 128, components/_select-box-it.scss */
+.selectboxit-optgroup-header {
+  font-weight: bold;
+}
+
+/* Drop Down optgroup header hover psuedo class */
+/* line 133, components/_select-box-it.scss */
+.selectboxit-optgroup-header:hover {
+  cursor: default;
+}
+
+/* Drop Down down arrow container */
+/* line 138, components/_select-box-it.scss */
+.selectboxit-arrow-container {
+  /* Positions the down arrow */
+  width: 47px;
+  position: absolute;
+  right: 0;
+  background-color: white;
+}
+
+/* Drop Down down arrow */
+/* line 147, components/_select-box-it.scss */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+  /* Horizontally centers the down arrow */
+  margin: 0 auto;
+  position: absolute;
+  top: 4%;
+  left: 10px;
+}
+
+/* Drop Down down arrow for jQueryUI and jQuery Mobile */
+/* line 156, components/_select-box-it.scss */
+.selectboxit .selectboxit-arrow-container .selectboxit-arrow.ui-icon {
+  top: 30%;
+}
+
+/* Drop Down individual option icon positioning */
+/* line 161, components/_select-box-it.scss */
+.selectboxit-option-icon-container {
+  float: left;
+}
+
+/* line 165, components/_select-box-it.scss */
+.selectboxit-container .selectboxit-option-icon {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* Drop Down individual option icon positioning */
+/* line 172, components/_select-box-it.scss */
+.selectboxit-option-icon-url {
+  width: 18px;
+  -webkit-background-size: 18px 18px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  float: left;
+}
+
+/* line 181, components/_select-box-it.scss */
+.selectboxit-rendering {
+  display: inline-block !important;
+  *display: inline !important;
+  zoom: 1 !important;
+  visibility: visible !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+/* line 192, components/_select-box-it.scss */
+.jqueryui .ui-icon {
+  background-color: inherit;
+}
+
+/* Another jQueryUI and jQuery Mobile compatability fix - Feel free to remove this style if you are not using jQuery Mobile */
+/* line 197, components/_select-box-it.scss */
+.jqueryui .ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/*
+  Default Theme
+  -------------
+  Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
+*/
+/* line 206, components/_select-box-it.scss */
+.selectboxit-btn {
+  background-color: #f5f5f5;
+  background-repeat: repeat-x;
+}
+
+/* line 211, components/_select-box-it.scss */
+.selectboxit.selectboxit-enabled.selectboxit-btn.selectboxit-open.selectboxit-focus {
+  background-color: #477dca;
+}
+/* line 214, components/_select-box-it.scss */
+.selectboxit.selectboxit-enabled.selectboxit-btn.selectboxit-open.selectboxit-focus .selectboxit-text {
+  color: #FFF;
+}
+/* line 218, components/_select-box-it.scss */
+.selectboxit.selectboxit-enabled.selectboxit-btn.selectboxit-open.selectboxit-focus .selectboxit-arrow-container {
+  background-color: #477dca;
+}
+/* line 222, components/_select-box-it.scss */
+.selectboxit.selectboxit-enabled.selectboxit-btn.selectboxit-open.selectboxit-focus .selectboxit-arrow {
+  color: #FFF;
+}
+
+/* line 227, components/_select-box-it.scss */
+.selectboxit-btn.selectboxit-enabled:hover,
+.selectboxit-btn.selectboxit-enabled:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+}
+
+/* line 234, components/_select-box-it.scss */
+.selectboxit-default-arrow {
+  color: #477dca;
+  font-size: .5em;
+}
+
+/* line 240, components/_select-box-it.scss */
+.selectboxit-list {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 247, components/_select-box-it.scss */
+.selectboxit-list .selectboxit-option-anchor {
+  font-size: 16px;
+  text-decoration: none;
+  color: #477dca;
+  border: 1px solid #dddddd;
+}
+
+/* line 255, components/_select-box-it.scss */
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+  color: #ffffff;
+  background-color: #333333;
+  background-repeat: repeat-x;
+  text-indent: 22px;
+}
+
+/* line 262, components/_select-box-it.scss */
+.selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor {
+  color: #999999;
+}
+
+/* line 1, pages/_global-template.scss */
+#main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 3, pages/_home.scss */
+#main {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 8, pages/_home.scss */
+.blog {
+  float: left;
+  display: block;
+  margin-right: 1.40845%;
+  width: 100%;
+}
+/* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+.blog:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 61.25em) {
+  /* line 8, pages/_home.scss */
+  .blog {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+  }
+  /* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .blog:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 48em) {
+  /* line 8, pages/_home.scss */
+  .blog {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 100%;
+  }
+  /* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .blog:last-child {
+    margin-right: 0;
+  }
+}
+
+/* line 21, pages/_home.scss */
+.block {
+  float: left;
+  display: block;
+  margin-right: 1.40845%;
+  width: 23.94366%;
+  height: 100px;
+  border: 1px solid red;
+  margin-bottom: 1.618em;
+  color: white;
+  text-align: center;
+  padding: 1.618em;
+}
+/* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+.block:last-child {
+  margin-right: 0;
+}
+/* line 30, pages/_home.scss */
+.block.row-1 {
+  background-color: blue;
+}
+/* line 34, pages/_home.scss */
+.block.row-2 {
+  background-color: green;
+}
+@media screen and (max-width: 61.25em) {
+  /* line 21, pages/_home.scss */
+  .block {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+  }
+  /* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .block:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 21, pages/_home.scss */
+  .block {
+    float: left;
+    display: block;
+    margin-right: 20%;
+    width: 100%;
+  }
+  /* line 38, /Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .block:last-child {
+    margin-right: 0;
+  }
+}
