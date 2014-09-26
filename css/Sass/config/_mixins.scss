@@ -8,9 +8,9 @@
 
 
 // SVG BACKGROUND IMAGES WITH BITMAP FALLBACK (REQUIRES MODERNIZR)
-@mixin svg-background( $name, $fallback-extension: 'png', $size: false ){
-
+@mixin svg-background( $name, $size: false, $fallback-extension: 'png' ){
   background-image: url( #{$images-path}#{$name}.svg );
+  background-repeat: no-repeat;
 
   @if( $size ){
     background-size: $size;
